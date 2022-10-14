@@ -6,7 +6,7 @@ const movieSchema = new mongoose.Schema({
   stars:[String],
   image: String,
   description: String,
-  showTimes: [String]
+  showtimes: [String]
 })
 
 const Movies = mongoose.model("Movies", movieSchema)

@@ -1,0 +1,22 @@
+
+<div>
+  <h3>Entrando en los detalles de las peliculas</h3>
+  <p>...</p>
+  
+  
+    <img src="{{allMovies.image}}" alt="pelicula">
+  
+  <div>
+    <h3>{{allMovies.title}}</h3>
+    <h5>{{allMovies.director}}</h5>
+    <ul>
+      {{#each allMovies.stars}}
+      <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <p>{{allMovies.description}}</p>
+    <p>{{allMovies.showtimes}}</p>
+  </div>
+
+  
+</div>

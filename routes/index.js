@@ -20,5 +20,22 @@ router.get("/movies", (req, res, next) => {
   })
 
 })
+router.get("/movie/:movieId", (req, res, next) => {
+
+  const {movieId} = req.params
+  Movies.findOne({"_id": movieId})
+  .then((response) => {
+    console.log(response)
+    res.render("movie-details.hbs", {
+      allMovies: response
+    })
+
+  })
+  .catch((err) => {
+    next(err)
+  })
+
+})
+
 
 module.exports = router;
