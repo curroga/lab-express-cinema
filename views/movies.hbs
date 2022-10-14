@@ -1,0 +1,15 @@
+
+<div>
+  <h3>Aqui irán todas las peliculas</h3>
+  <p>...</p>
+
+  <div>
+    {{#each allMovies}}
+    <img src="{{image}}" alt="Movies">
+    <h4>{{title}}</h4>
+    
+    <a href="/movie/{{_id}}"><p>See more</p></a>
+
+    {{/each}}
+  </div>
+</div>
